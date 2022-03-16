@@ -14,7 +14,7 @@ Hi, I'm [Lea](https://twitter.com/lea_rosema/). I'm a frontend developer and dig
 This is my blog where I write about WebGL and creative coding stuff,
 mostly for personal learning purposes, but maybe this is also helpful for other people :).
 
-I have a [CodePen profile](https://codepen.io/learosema/) where I code fun stuff.
+I have a [CodePen profile](https://codepen.io/learosema/) where I create digital arts and try out new technologies.
 Sometimes I also code using legacy technologies, like [16bit x86 assembler](https://gist.github.com/learosema/5b217f2cb8171c87c9a30a4a2957b31d).
 
 If you love the stuff I do and want to support me, you can [buy me a fruit tea](https://ko-fi.com/learosema).
