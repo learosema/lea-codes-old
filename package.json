@@ -10,7 +10,7 @@
     "watch-css": "sass src/scss/:src/_includes/css/ --watch",
     "prebuild": "rm -rf public",
     "build": "npm run build-css -s && npm run build-11ty -s",
-    "deploy": "cp CNAME public && gh-pages -d public",
+    "deploy": "touch public/.nojekyll && cp CNAME public && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
