@@ -1,0 +1,69 @@
+.toc {
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    padding: 8px 0;
+    margin: -4px;
+    counter-reset: ol-counter;
+    li {
+      margin: 4px;
+      flex-shrink: 0;
+      flex-grow: 1;
+      flex-basis: 100%;
+
+      counter-increment: ol-counter;
+      a {
+        display: block;
+        width: 100%;
+        padding: $size--300;
+        background: $grey--300;
+        border-radius: 1rem;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          box-shadow: 0 0 2px 2px #fff;
+        }
+        &::before {
+          content: counter(ol-counter) '. ';
+        }
+      }
+
+      &:nth-child(4n) {
+        a {
+          background-color: #302;
+        }
+      }
+
+      &:nth-child(4n + 1) {
+        a {
+          background-color: #023;
+        }
+      }
+
+      &:nth-child(4n + 2) {
+        a {
+          background-color: #032;
+        }
+      }
+
+      &:nth-child(4n + 3) {
+        a {
+          background-color: #203;
+        }
+      }
+      @media (min-width: 768px) {
+        margin: 6px 4px;
+        flex-basis: calc(33% - 8px);
+        flex-grow: 0;
+        a {
+          height: 100%;
+          min-height: 8rem;
+        }
+      }
+    }
+  }
+}
