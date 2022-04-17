@@ -1,7 +1,7 @@
 ---
 title: Links
 description: Collection of resources for learning WebGL and Three.js
-layout: layouts/content.html
+layout: layouts/content.njk
 variant: toc
 author: Lea Rosema
 ---

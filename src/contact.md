@@ -1,7 +1,7 @@
 ---
 title: Contact
 description: Contact page
-layout: layouts/content.html
+layout: layouts/content.njk
 author: Lea Rosema
 ---
 

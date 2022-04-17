@@ -1,6 +1,6 @@
 ---
 title: Maths basics
-layout: layouts/content.html
+layout: layouts/content.njk
 tags:
   - maths
   - numbers

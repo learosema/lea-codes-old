@@ -1,7 +1,7 @@
 ---
 title: Code of Conduct
 description: Code of Conduct
-layout: layouts/content.html
+layout: layouts/content.njk
 author: Lea Rosema
 ---
 

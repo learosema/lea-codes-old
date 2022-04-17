@@ -1,7 +1,7 @@
 ---
 title: License
 description: License
-layout: layouts/content.html
+layout: layouts/content.njk
 author: Lea Rosema
 ---
 

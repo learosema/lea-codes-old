@@ -1,17 +1,14 @@
 {
-  "name": "webgl-demos",
-  "version": "1.0.0",
-  "description": "Various WebGL demos by Lea Rosema",
+  "name": "lea-codes",
+  "version": "0.1.0",
+  "description": "Lea's personal website",
   "scripts": {
-    "start": "concurrently 'npm:watch-css' 'npm:serve-11ty'",
-    "build-11ty": "cross-env ELEVENTY_ENV=production eleventy",
-    "serve-11ty": "eleventy --serve",
-    "build-css": "cross-env ELEVENTY_ENV=production sass src/scss/:src/_includes/css/",
-    "watch-css": "sass src/scss/:src/_includes/css/ --watch",
-    "prebuild": "rm -rf public",
-    "build": "npm run build-css -s && npm run build-11ty -s",
-    "deploy": "touch public/.nojekyll && cp CNAME public && gh-pages -d public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev -s",
+    "dev": "gulp && concurrently 'gulp watch' 'eleventy --serve'",
+    "build": "rm -rf dist && tsc -d --emitDeclarationOnly && gulp && eleventy",
+    "production": "cross-env NODE_ENV=production npm run build",
+    "prepublishOnly": "npm run production",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -22,10 +19,21 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "concurrently": "^7.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "concurrently": "^7.1.0",
     "cross-env": "^7.0.3",
+    "esbuild": "^0.14.36",
+    "get-google-fonts": "^1.2.2",
     "gh-pages": "^3.2.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-esbuild": "^0.10.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.1.0",
     "html-minifier": "^4.0.0",
-    "sass": "^1.49.9"
+    "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "shader-art": "^1.1.1"
   }
 }

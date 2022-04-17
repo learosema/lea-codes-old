@@ -1,13 +1,9 @@
-const htmlMinTransform = require('./src/transforms/html-min-transform.js');
+const htmlMinTransform = require('./eleventy/html-min-transform');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = (config) => {
+  config.addPlugin(syntaxHighlight);
   config.addTransform('htmlmin', htmlMinTransform);
-
-  // Set directories to pass through to the dist folder
-  // config.addPassthroughCopy('./src/css/');
-  config.addPassthroughCopy('./src/svg/');
-  config.addPassthroughCopy('./src/textures/');
-  config.addPassthroughCopy('./src/js/');
 
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);

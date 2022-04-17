@@ -1,6 +1,6 @@
 ---
 title: Maths basics
-layout: layouts/content.html
+layout: layouts/content.njk
 author: Lea Rosema
 tags:
   - math

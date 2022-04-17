@@ -1,7 +1,7 @@
 ---
 title: Contribution guidelines
 description: Contribution guidelines
-layout: layouts/content.html
+layout: layouts/content.njk
 author: Lea Rosema
 ---
 

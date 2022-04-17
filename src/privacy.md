@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: Privacy policy for lea codes
-layout: layouts/content.html
+layout: layouts/content.njk
 author: Lea Rosema
 ---
 
