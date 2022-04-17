@@ -1,7 +1,7 @@
-const $ = document.querySelector.bind(document);
+import { $, $$ } from './query';
 const burger = $('.burger');
 const menu = $('.navigation__layer');
-const navLinks = Array.from($('.navigation').querySelectorAll('button, a'));
+const navLinks = $$('button, a', $('.navigation'));
 
 if (burger) {
   burger.addEventListener('click', (e) => {
