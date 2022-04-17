@@ -5,20 +5,8 @@
       "href": "/"
     },
     {
-      "text": "Maths",
-      "href": "/maths-basics/"
-    },
-    {
-      "text": "WebGL",
-      "href": "/webgl/"
-    },
-    {
-      "text": "Three.js",
-      "href": "/threejs/"
-    },
-    {
-      "text": "Demos",
-      "href": "/demos/"
+      "text": "Learn",
+      "href": "/learn/"
     },
     {
       "text": "Links",
