@@ -10,24 +10,12 @@
     <style>
       {% include 'css/index.css' %}
     </style>
+    <link rel="stylesheet" href="{{ site.url }}/fonts/fonts.css" media="all" onload="this.media='all'">
   </head>
   <body>
     {% include 'partials/skip-link.njk' %}
     {% include 'partials/navigation.njk' %}
-    <shader-art autoplay class="shader-canvas | full-fixed" dpr="1" aria-hidden="true">
-      {% set vertexShader %}
-        {% include 'shaders/background.vs' %}
-      {% endset %}
-      {% set fragmentShader %}
-        {% include 'shaders/background.fs' %}
-      {% endset %}
-      <script type="vert">
-        {{ vertexShader | glslminify | safe }}
-      </script>
-      <script type="frag">
-        {{ fragmentShader | glslminify | safe }}
-      </script>
-    </shader-art>
+    
     <main id="main-content" tabindex="-1">
       {% block content %}
         {{ content | safe }}

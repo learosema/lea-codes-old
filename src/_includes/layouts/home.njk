@@ -1,9 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-  <div class="wrapper">
-    <article class="article {{ variant }}">
-      {{ content | safe }}
-    </article>
-  </div>
+  <article class="article | wrapper flow">
+    {{ content | safe }}
+  </article>
 {% endblock %}

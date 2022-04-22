@@ -2,7 +2,7 @@
 import GetGoogleFonts from "get-google-fonts";
 
 const LINK =
-  "https://fonts.googleapis.com/css2?family=Croissant+One&display=swap";
+  "https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap";
 
 const fonts = async () => {
   // Setup of the library instance by setting where we want

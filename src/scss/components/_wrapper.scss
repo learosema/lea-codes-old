@@ -1,6 +1,11 @@
 .wrapper {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: $size--200;
+  display: grid;
+  grid-template-columns: 5fr 1fr min(calc(100% - 4rem), var(--max-width, 1000px)) 1fr 5fr;
+  grid-column-gap: 1rem;
+}
+
+.wrapper > * {
+  grid-column: 3;
+  width: 100%;
+  margin: 0 auto;
 }

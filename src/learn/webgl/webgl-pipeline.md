@@ -10,9 +10,7 @@ author: Lea Rosema
 
 ## WebGL pipeline
 
-![diagram of the WebGL pipeline]({{ site.url }}/svg/webgl-pipeline.svg)
-
-### Description
+### Rough description
 
 - An array of vertices (or any data) is uploaded into a buffer which is split into data records
 - the vertex shader is executed once per data record

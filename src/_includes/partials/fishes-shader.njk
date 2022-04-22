@@ -1,0 +1,14 @@
+<shader-art autoplay dpr="1" aria-hidden="true">
+  {% set vertexShader %}
+    {% include 'shaders/background.vs' %}
+  {% endset %}
+  {% set fragmentShader %}
+    {% include 'shaders/background.fs' %}
+  {% endset %}
+  <script type="vert">
+    {{ vertexShader | glslminify | safe }}
+  </script>
+  <script type="frag">
+    {{ fragmentShader | glslminify | safe }}
+  </script>
+</shader-art>

@@ -1,18 +1,20 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: auto;
-
-  background: black;
-  color: white;
+  background: var(--footer-bg);
+  color: var(--footer-fg);
   padding: 1rem;
-
+  margin-top: 6rem;
   p {
     margin: 0.5rem 0;
     font-size: 1.2rem;
     text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--footer-fg);
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   nav {
@@ -30,14 +32,8 @@
 
       li {
         display: block;
-        margin: 0.6rem 0;
-        a {
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+        margin: 1rem 0;
+        
       }
     }
   }

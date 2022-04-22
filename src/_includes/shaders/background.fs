@@ -2,8 +2,9 @@ precision highp float;
 uniform vec2 resolution;
 uniform float time;
 const float PI = 3.141592654;
-const float gridSize = 10.;
-const float fishGrid = 12.;
+const float gridSize = 14.;
+const float fishGrid = 10.;
+const float ZOOM = 9.;
     
 vec2 coords() {
   vec2 p = gl_FragCoord.xy / resolution - .5;
@@ -102,8 +103,8 @@ vec3 shade(in vec2 p) {
               + .5;
   vec3 bg = vec3(0., .1, .2) + vec3(0, .1, .1) * smoothstep(0., .05, clamp(sin(p0.x * 10. + p0.y * 20. + time * .3), 0., 1.));
   float star = smoothstep(0., .1, sdf);
-  float fish = smoothstep(0., .1, fishDF(p00 * 27.));
-  vec3 fishFg = clownFishTexture(p00 * 27.);
+  float fish = smoothstep(0., .1, fishDF(p00 * ZOOM));
+  vec3 fishFg = clownFishTexture(p00 * ZOOM);
   vec3 bg2 = vec3(0, .1, .1) * smoothstep(0., .05, clamp(sin(p0.x * 5. + p0.y * 8.) * sin(2. + p0.x * 8. + p0.y * 16.), 0., 1.));
   vec3 bg3 = smoothstep(0., .1, -sdfBubbles) * vec3(.1);
   return mix(fg, mix(fishFg, bg, fish), star) + bg2 + bg3;
@@ -112,6 +113,6 @@ vec3 shade(in vec2 p) {
 void main () {
   vec2 p0 = coords() - vec2(0., sin(time * 2e-2));
   vec2 p = rotate(p0, 45. * PI / 180.);
-  vec3 col = shade(p * 27.);
+  vec3 col = shade(p * ZOOM * 2.);
   gl_FragColor = vec4(col, 1.0);
 }
