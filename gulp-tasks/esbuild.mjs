@@ -8,10 +8,9 @@ const isProduction = process.env.NODE_ENV === "production";
 function buildFactory(gulpEsbuild) {
   function esbuild() {
     return gulp
-      .src("./src/js/index.js")
+      .src(["./src/js/index.js", "./src/js/shader-art.js"])
       .pipe(
         gulpEsbuild({
-          outfile: "bundle.js",
           bundle: true,
           format: "esm",
           minify: true,

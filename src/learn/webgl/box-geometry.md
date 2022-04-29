@@ -1,5 +1,5 @@
 ---
-title: Box Geometry
+title: A geometry for a box
 layout: layouts/content.njk
 author: Lea Rosema
 tags:

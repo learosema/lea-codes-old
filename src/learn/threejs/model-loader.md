@@ -2,10 +2,6 @@
 title: Model Loader
 description: Dealing with different 3D model formats in three.js
 layout: layouts/content.njk
-tags:
-  - three
-  - gltf
-  - models
 author: Lea Rosema
 ---
 

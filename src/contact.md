@@ -3,6 +3,7 @@ title: Contact
 description: Contact page
 layout: layouts/content.njk
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # Contact

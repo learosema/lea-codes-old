@@ -1,5 +1,5 @@
 ---
-title: Geometries
+title: Geometries in Three.js
 description: Three.js geometries
 layout: layouts/content.njk
 tags:

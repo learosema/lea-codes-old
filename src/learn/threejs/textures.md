@@ -2,9 +2,6 @@
 title: Textures
 description: Loading textures in Three.js
 layout: layouts/content.njk
-tags:
-  - three
-  - textures
 author: Lea Rosema
 ---
 

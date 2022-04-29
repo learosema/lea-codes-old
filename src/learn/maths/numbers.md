@@ -1,9 +1,6 @@
 ---
-title: Maths basics
+title: Numbers
 layout: layouts/content.njk
-tags:
-  - maths
-  - numbers
 author: Lea Rosema
 ---
 

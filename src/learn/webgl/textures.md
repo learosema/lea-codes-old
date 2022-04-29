@@ -1,5 +1,5 @@
 ---
-title: About WebGL – Passing data
+title: Textures in WebGL
 layout: layouts/content.njk
 author: Lea Rosema
 tags:

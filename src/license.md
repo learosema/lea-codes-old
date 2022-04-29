@@ -3,6 +3,7 @@ title: License
 description: License
 layout: layouts/content.njk
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # MIT License

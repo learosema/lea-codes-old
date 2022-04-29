@@ -3,6 +3,7 @@ title: Code of Conduct
 description: Code of Conduct
 layout: layouts/content.njk
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # Contributor Covenant Code of Conduct
@@ -27,7 +28,7 @@ include:
 - Focusing on what is best for the community
 - Showing empathy towards other community members
 
-Examples of unacceptable behavior by participants include:
+### Examples of unacceptable behavior by participants include
 
 - Deliberate use of rejected pronouns and/or dead or rejected names
 - The use of sexualized language or imagery and unwelcome sexual attention or

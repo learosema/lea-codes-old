@@ -2,9 +2,6 @@
 title: Lights
 description: Three.js lights
 layout: layouts/content.njk
-tags:
-  - three
-  - lights
 author: Lea Rosema
 ---
 

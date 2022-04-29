@@ -2,9 +2,6 @@
 title: Helpers
 description: Three.js helper classes
 layout: layouts/content.njk
-tags:
-  - three
-  - hello-world
 author: Lea Rosema
 ---
 

@@ -2,9 +2,6 @@
 title: Hello Three.js
 description: Getting started with three.js
 layout: layouts/content.njk
-tags:
-  - three
-  - hello-world
 author: Lea Rosema
 ---
 

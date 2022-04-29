@@ -4,6 +4,7 @@ description: WebGL core concepts
 layout: layouts/content.njk
 variant: toc
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # About Vanilla WebGL

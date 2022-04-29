@@ -3,6 +3,7 @@ title: Contribution guidelines
 description: Contribution guidelines
 layout: layouts/content.njk
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # Contribution Guidelines

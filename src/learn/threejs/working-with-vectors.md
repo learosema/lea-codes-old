@@ -1,10 +1,7 @@
 ---
-title: Hello Three.js
+title: Vectors in Three.js
 description: Working with Vectors in Three.js
 layout: layouts/content.njk
-tags:
-  - three
-  - hello-world
 author: Lea Rosema
 ---
 

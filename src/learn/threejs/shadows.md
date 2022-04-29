@@ -2,10 +2,6 @@
 title: Shadows
 description: Casting shadows with Three.js
 layout: layouts/content.njk
-tags:
-  - three
-  - lights
-  - shadows
 author: Lea Rosema
 ---
 

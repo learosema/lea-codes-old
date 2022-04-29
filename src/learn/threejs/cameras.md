@@ -2,9 +2,6 @@
 title: Cameras
 description: Three.js cameras
 layout: layouts/content.njk
-tags:
-  - three
-  - cameras
 author: Lea Rosema
 ---
 

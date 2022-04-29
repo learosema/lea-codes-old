@@ -1,0 +1,24 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<shader-art class="full-fixed" autoplay dpr="1" aria-hidden="true" role="img" aria-label="{{ title }}">
+  {% set vertexShader %}
+    {% include 'shaders/ocean.vs' %}
+  {% endset %}
+  {% set fragmentShader %}
+    {% include 'shaders/ocean.fs' %}
+  {% endset %}
+  <script type="vert">
+    {{ vertexShader | glslminify | safe }}
+  </script>
+  <script type="frag">
+    {{ fragmentShader | glslminify | safe }}
+  </script>
+</shader-art>
+{% endblock %}
+
+{% block scripts %}
+<script async src="{{ site.url }}/shader-art.js"></script>
+{% endblock %}
+
+

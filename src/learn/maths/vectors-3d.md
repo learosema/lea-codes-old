@@ -1,9 +1,6 @@
 ---
-title: Maths basics
+title: 3D Vectors
 layout: layouts/content.njk
-tags:
-  - maths
-  - vectors
 author: Lea Rosema
 ---
 
@@ -11,14 +8,14 @@ author: Lea Rosema
 
 [back to table of contents](../)
 
-## 2D Vectors
+## 3D Vectors
 
-2D vectors have an `x` component and a `y` component.
+3D vectors have an `x` component, a `y` component and a `z` component
 
 ### The length of a vector:
 
 ```glsl
-length(v) = sqrt(v.x^2 + v.y^2)
+length(v) = sqrt(v.x^2 + v.y^2 + v.z^2)
 ```
 
 The length of a vector can be obtained with the help of the
@@ -41,8 +38,8 @@ distance(a, b) = length(b - a)
 
 ### Dot product
 
-The dot product of two vectors `a = [ax, ay]` and `b = [bx, by]` is defined as
+The dot product of two vectors `a = [ax, ay, az]` and `b = [bx, by, bz]` is defined as
 
 ```glsl
-dot(a, b) = ax * bx + ay * by
+dot(a, b) = ax * bx + ay * by + az * bz
 ```

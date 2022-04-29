@@ -1,9 +1,10 @@
 ---
-title: About Three.js
+title: About Three.js TOC
 description: A rough overview of Three.js
 layout: layouts/content.njk
 variant: toc
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # Three.js

@@ -4,6 +4,7 @@ description: Links to several WebGL demos
 layout: layouts/content.njk
 variant: toc
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # Demos

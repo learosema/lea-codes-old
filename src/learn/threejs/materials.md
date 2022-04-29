@@ -2,9 +2,6 @@
 title: Materials
 description: Three.js materials.
 layout: layouts/content.njk
-tags:
-  - three
-  - materials
 author: Lea Rosema
 ---
 

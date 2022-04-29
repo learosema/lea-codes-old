@@ -13,16 +13,17 @@
     <link rel="stylesheet" href="{{ site.url }}/fonts/fonts.css" media="all" onload="this.media='all'">
   </head>
   <body>
-    {% include 'partials/skip-link.njk' %}
-    {% include 'partials/navigation.njk' %}
+    {% block header %}
+    {% endblock %}
     
     <main id="main-content" tabindex="-1">
       {% block content %}
         {{ content | safe }}
       {% endblock %}
     </main>
-    {% include 'partials/footer.njk' %}
-    <script async src="{{ site.url }}/bundle.js"></script>
+    {% block footer %}
+    {% endblock %}
+    <script async src="{{ site.url }}/index.js"></script>
     {% block scripts %}
     {% endblock %}
   </body>

@@ -1,9 +1,7 @@
 ---
-title: Maths basics
+title: Matrices
 layout: layouts/content.njk
 author: Lea Rosema
-tags:
-  - math
 ---
 
 # Maths basics

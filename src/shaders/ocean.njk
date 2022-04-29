@@ -1,9 +1,12 @@
-<shader-art autoplay dpr="1" aria-hidden="true">
+---
+title: A tiny little ocean
+---
+<shader-art autoplay dpr="1" aria-hidden="true" role="img" aria-label="{{ title }}">
   {% set vertexShader %}
-    {% include 'shaders/background.vs' %}
+    {% include 'shaders/ocean.vs' %}
   {% endset %}
   {% set fragmentShader %}
-    {% include 'shaders/background.fs' %}
+    {% include 'shaders/ocean.fs' %}
   {% endset %}
   <script type="vert">
     {{ vertexShader | glslminify | safe }}

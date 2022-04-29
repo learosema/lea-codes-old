@@ -1,9 +1,10 @@
 ---
 title: Maths basics
-descriptoin: Maths basics
+descriptoin: Maths basics TOC
 layout: layouts/content.njk
 variant: toc
 author: Lea Rosema
+eleventyExcludeFromCollections: true
 ---
 
 # Maths basics

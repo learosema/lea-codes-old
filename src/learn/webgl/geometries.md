@@ -1,5 +1,5 @@
 ---
-title: Geometries
+title: Geometries in WebGL
 layout: layouts/content.njk
 author: Lea Rosema
 tags:
