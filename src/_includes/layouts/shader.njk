@@ -15,7 +15,14 @@
     {{ fragmentShader | glslminify | safe }}
   </script>
 </shader-art>
+<article class="shader-meta">
+  <h1>{{ title }}</h1>
+  <p>{{ description }}</p>
+</article>
 {% endblock %}
+
+
+
 
 {% block scripts %}
 <script async src="{{ site.url }}/shader-art.js"></script>

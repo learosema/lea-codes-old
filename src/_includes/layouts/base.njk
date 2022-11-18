@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="{{ site.url }}/fonts/fonts.css" media="all" onload="this.media='all'">
   </head>
   <body>
-    {% block header %}
-    {% endblock %}
-    
+    <header>
+      {% block header %}
+      {% endblock %}
+    </header>
     <main id="main-content" tabindex="-1">
       {% block content %}
         {{ content | safe }}

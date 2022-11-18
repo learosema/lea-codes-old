@@ -18,22 +18,21 @@
   "author": "Lea Rosema",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-    "canvas": "^2.9.1",
-    "concurrently": "^7.1.0",
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "concurrently": "^7.5.0",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.14.36",
+    "esbuild": "^0.15.14",
     "get-google-fonts": "^1.2.2",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
-    "gulp-esbuild": "^0.10.2",
+    "gulp-esbuild": "^0.10.6",
     "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "html-minifier": "^4.0.0",
-    "sass": "^1.50.0"
+    "sass": "^1.56.1"
   },
   "dependencies": {
     "shader-art": "^1.2.1"

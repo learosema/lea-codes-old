@@ -1,7 +1,16 @@
 {% extends "layouts/base.njk" %}
 
+{% block header %}
+  {% include 'partials/skip-link.njk' %}
+  {% include 'partials/navigation.njk' %}
+{% endblock %}
+
 {% block content %}
-  <article class="article | wrapper flow">
+  <div class="flow">
     {{ content | safe }}
-  </article>
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'partials/footer.njk' %}
 {% endblock %}

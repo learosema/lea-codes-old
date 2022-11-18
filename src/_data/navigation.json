@@ -1,16 +1,16 @@
 {
   "items": [
     {
-      "text": "Home",
+      "text": "Blog",
       "href": "/"
     },
     {
-      "text": "Learn",
+      "text": "About",
       "href": "/learn/"
     },
     {
-      "text": "Links",
-      "href": "/links/"
+      "text": "Shaders",
+      "href": "/shaders/"
     }
   ]
 }
