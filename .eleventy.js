@@ -24,5 +24,6 @@ module.exports = (config) => {
       input: 'src',
       output: 'public',
     },
+    templateFormats: ['njk', 'md', '11ty.js'],
   };
 };
