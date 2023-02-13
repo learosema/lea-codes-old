@@ -1,36 +1,33 @@
 ---
-permalink: feed.xml
+permalink: /feed.xml
 eleventyExcludeFromCollections: true
-metadata:
-  title: Lea's World
-  subtitle: I am writing about my experiences as a software developer.
-  url: https://lea.codes/
-  feedUrl: https://lea.codes/feed.xml
-  author:
-    name: Lea Rosema
-    email: lea@lea.codes
+excludeFromSitemap: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections.all | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}</id>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/">
+  <title>{{ meta.blog.name }}</title>
+  <subtitle>{{ meta.blog.description }}</subtitle>
+  <link href="{{ meta.url }}/feed.xml" rel="self" />
+  <link href="{{ meta.url }}/" />
+  {% set postslist = collections.posts %}
+  <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ meta.url }}/</id>
   <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
+    <name>{{ meta.author }}</name>
+    <email>{{ meta.authorEmail }}</email>
   </author>
-  {%- for post in collections.all %}
-  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  {%- for post in postslist %} {%- set absolutePostUrl = post.url | absoluteUrl(meta.url)
+  %}
   <entry>
     <title>{{ post.data.title }}</title>
-    <category term="{{ post.data.tags }}" />
-    <link href="{{ absolutePostUrl }}"/>
+    <link href="{{ absolutePostUrl }}" />
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <content
+      xml:lang="{{ locale }}"
+      type="html"
+      >{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content
+    >
   </entry>
   {%- endfor %}
 </feed>

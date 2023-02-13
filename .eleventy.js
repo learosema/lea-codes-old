@@ -6,12 +6,12 @@ const esbuildPlugin = require('./config/plugins/esbuild');
 const postCSSPlugin = require('./config/plugins/postcss');
 const htmlTransformPlugin = require('./config/plugins/html-transform');
 const {
-  formatDate,
-  isoDate,
+  formatdate,
+  isodate,
   limit,
   minify,
   where,
-  splitLines,
+  splitlines,
   slugify,
 } = require('./config/filters/index');
 
@@ -31,12 +31,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(htmlTransformPlugin);
 
   // filters
-  eleventyConfig.addFilter('formatDate', formatDate);
-  eleventyConfig.addFilter('isoDate', isoDate);
+  eleventyConfig.addFilter('formatdate', formatdate);
+  eleventyConfig.addFilter('isodate', isodate);
   eleventyConfig.addFilter('limit', limit);
   eleventyConfig.addFilter('minify', minify);
   eleventyConfig.addFilter('where', where);
-  eleventyConfig.addFilter('splitLines', splitLines);
+  eleventyConfig.addFilter('splitlines', splitlines);
   eleventyConfig.addFilter('slugify', slugify);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);

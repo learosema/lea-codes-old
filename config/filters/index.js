@@ -1,17 +1,17 @@
-const formatDate = require('./formatdate');
-const isoDate = require('./isodate');
+const formatdate = require('./formatdate');
+const isodate = require('./isodate');
 const limit = require('./limit');
 const minify = require('./minify');
 const where = require('./where');
-const splitLines = require('./splitlines');
+const splitlines = require('./splitlines');
 const slugify = require('./slugify');
 
 module.exports = {
-  formatDate,
-  isoDate,
+  formatdate,
+  isodate,
   limit,
   minify,
   where,
-  splitLines,
+  splitlines,
   slugify,
 };
