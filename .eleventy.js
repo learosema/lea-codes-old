@@ -5,15 +5,7 @@ const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const esbuildPlugin = require('./config/plugins/esbuild');
 const postCSSPlugin = require('./config/plugins/postcss');
 const htmlTransformPlugin = require('./config/plugins/html-transform');
-const {
-  formatdate,
-  isodate,
-  limit,
-  minify,
-  where,
-  splitlines,
-  slugify,
-} = require('./config/filters/index');
+const {filterPlugin} = require('./config/filters/index');
 
 // module import events
 const { svgToJpeg } = require('./config/events/index.js');
@@ -31,17 +23,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(htmlTransformPlugin);
 
   // filters
-  eleventyConfig.addFilter('formatdate', formatdate);
-  eleventyConfig.addFilter('isodate', isodate);
-  eleventyConfig.addFilter('limit', limit);
-  eleventyConfig.addFilter('minify', minify);
-  eleventyConfig.addFilter('where', where);
-  eleventyConfig.addFilter('splitlines', splitlines);
-  eleventyConfig.addFilter('slugify', slugify);
-  eleventyConfig.addFilter('keys', Object.keys);
-  eleventyConfig.addFilter('values', Object.values);
-  eleventyConfig.addFilter('entries', Object.entries);
-
+  eleventyConfig.addPlugin(filterPlugin);
+  
   // short codes
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
