@@ -1,7 +1,6 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName:
-    'Lea codes and shares her thoughts, struggles and learnings on her journey.',
+  siteName: 'Lea codes',
   siteDescription:
     'Lea codes and shares her thoughts, struggles and learnings on her journey.',
   siteType: 'Person',
