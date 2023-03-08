@@ -1,5 +1,20 @@
-<!-- TODO: 
-
-https://web.dev/website-navigation/
-
--->
+<nav id="topNav" class="navbar" aria-labelledby="topNavHeadline">
+  <h2 id="topNavHeadline" class="visually-hidden">Top navigation</h2>
+  <ul>
+    {% for item in navigation.top %}
+    <li>
+      <a
+        class="nav"
+        href="{{ item.url }}"
+        {{
+        helpers.getLinkActiveState(item.url,
+        page.url)
+        |
+        safe
+        }}
+        >{{ item.text }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
