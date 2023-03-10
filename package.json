@@ -4,11 +4,8 @@
   "description": "Lea's personal website",
   "scripts": {
     "start": "npm run dev -s",
-    "dev": "gulp && concurrently 'gulp watch' 'eleventy --serve'",
-    "build": "rm -rf dist && tsc -d --emitDeclarationOnly && gulp && eleventy",
-    "production": "cross-env NODE_ENV=production npm run build",
-    "prepublishOnly": "npm run production",
-    "semantic-release": "semantic-release"
+    "dev": "eleventy --serve",
+    "build": "cross-env NODE_ENV=production eleventy"
   },
   "repository": {
     "type": "git",
@@ -19,15 +16,13 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
-    "concurrently": "^7.6.0",
-    "cross-env": "^7.0.3",
+    "browserslist": "^4.21.5",
     "dayjs": "^1.11.7",
-    "html-minifier": "^4.0.0",
+    "esbuild": "^0.17.11",
     "html-minifier-terser": "^7.1.0",
-    "postcss": "^8.4.21",
-    "postcss-import": "^15.1.0",
-    "postcss-import-ext-glob": "^2.1.1"
+    "lightningcss": "^1.19.0"
   }
 }

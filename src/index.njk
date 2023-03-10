@@ -1,14 +1,14 @@
 ---
-title: Blog
-description: This pages is a source of information for WebGL
-layout: layouts/home.njk
+title: Lea Codes
+description: "Lea's Blog on Web Development with Accessibility in Mind"
+layout: base.njk
 author: Lea Rosema
 eleventyExcludeFromCollections: true
 ---
 
 <h1>{{ title }}</h1>
 
-{% for post in collections.all | reverse %}
+{% for post in collections.posts | reverse %}
   <article class="article | wrapper flow">
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     <p>{{ post.data.description }}</p>

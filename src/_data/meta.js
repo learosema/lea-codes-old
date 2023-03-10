@@ -1,8 +1,7 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
   siteName: 'Lea codes',
-  siteDescription:
-    'Lea codes and shares her thoughts, struggles and learnings on her journey.',
+  siteDescription: "Lea's Blog on web development",
   siteType: 'Person',
   locale: 'en_EN',
   lang: 'en',
@@ -11,14 +10,12 @@ module.exports = {
   authorWebsite: 'https://lea.codes',
   themeColor: '#DD4462',
   themeBgColor: '#F3F3F3',
+  dateFormat: 'DD.MM.YYYY',
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg',
-    mastodonProfile: 'https://chaos.social/@learosema',
+    mastodonProfile: 'https://lea.lgbt/@lea',
   },
   pagination: {
     itemsPerPage: 20,
-  },
-  menu: {
-    closedText: 'Menu',
   },
 };

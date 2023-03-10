@@ -3,9 +3,9 @@ const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 
 const esbuildPlugin = require('./config/plugins/esbuild');
-const postCSSPlugin = require('./config/plugins/postcss');
+const lightningCSSPlugin = require('./config/plugins/lightning-css');
 const htmlTransformPlugin = require('./config/plugins/html-transform');
-const {filterPlugin} = require('./config/filters/index');
+const { filterPlugin } = require('./config/filters/index');
 
 // module import events
 const { svgToJpeg } = require('./config/events/index.js');
@@ -18,13 +18,13 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlightPlugin);
   eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addPlugin(esbuildPlugin);
-  eleventyConfig.addPlugin(postCSSPlugin);
+  eleventyConfig.addPlugin(lightningCSSPlugin);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(htmlTransformPlugin);
 
   // filters
   eleventyConfig.addPlugin(filterPlugin);
-  
+
   // short codes
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);

@@ -18,15 +18,15 @@ const filterPlugin = (eleventyConfig) => {
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
   eleventyConfig.addFilter('json', JSON.stringify);
-}
+};
 
 module.exports = {
-  formatdate,
-  isodate,
+  formatDate,
+  isoDate,
   limit,
   minify,
   where,
-  splitlines,
+  splitLines,
   slugify,
   filterPlugin,
 };

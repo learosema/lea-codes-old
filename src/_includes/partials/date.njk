@@ -1,5 +1,5 @@
-<time datetime="{{ definedDate | toIsoString }}">
+<time datetime="{{ definedDate | isoDate }}">
   {{
-    definedDate | formatDate('MMMM D, YYYY')
+    definedDate | formatDate(meta.dateFormat)
   }}
 </time>
