@@ -11,8 +11,8 @@
     },
     "@id": "{{ url }}",
     "headline": "{{ title or meta.siteName }}",
-    "description": "{{ seo.description or description or meta.siteDescription }}",
-    "image": "{{ meta.url }}{% if seo.image %}/assets/images/{{ seo.image }}{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}",
+    "description": "{{ description or meta.siteDescription }}",
+    "image": "{{ meta.url }}{{ meta.meta_data.opengraph_default }}",
     "inLanguage": "{{ meta.locale }}",
     "publisher": {
       "@type": "{{ meta.siteType }}",
