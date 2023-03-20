@@ -1,4 +1,8 @@
-body {
-  background: rebeccapurple;
-  color: white;
-}
+@import 'config/_reset.css';
+@import 'config/_colors.css';
+@import 'config/_spacings.css';
+@import 'config/_typography.css';
+
+@import 'utils/_visually-hidden.css';
+@import 'utils/_flow.css';
+@import 'utils/_prose.css';
