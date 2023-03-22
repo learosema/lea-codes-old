@@ -1,6 +1,34 @@
 :root {
-  --bg: #121212;
+
+  --plum-1: #325;
+  --plum-2: #536;
+  --plum-3: #96a;
+  --plum-4: #cae;
+  --plum-5: #fee;
+
+  --blue-1: #235;
+  --blue-2: #57f;
+  --blue-3: #7bf;
+  --blue-4: #adf;
+  --blue-5: #def;
+
+  --red-1: #511;
+  --red-2: #722;
+  --red-3: #a33;
+  --red-4: #f77;
+  --red-5: #fcc;
+
+  --grey-1: #171717;
+  --grey-2: #333;
+  --grey-3: #555;
+  --grey-4: #777;
+  --grey-5: #ccc;
+
+  --bg: var(--grey-1);
   --fg: #fff;
+
+  --bg-secondary: #423;
+  --fg-secondary: #fee;
 
   --headline-fg: #fae;
 
