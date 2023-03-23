@@ -13,6 +13,15 @@ const prng = {
   randInt(a, b) {
     return a + Math.floor(prng.random() * (b - a + 1));
   },
+  curve(length, step, y0, amplitude) {
+    const min = y0 - amplitude;
+    const max = y0 + amplitude;
+    const format = (num) => num.toFixed(2).replace(/(\.0)?0$/,'');
+    const p0 = [-step, y0].map(format).join(' ');
+    const pEnd = [(length + 1) * step, y0].map(format).join(' ');
+    const points = Array.from({length}, (_, idx) => ([(idx * step), prng.randInt(min, max)])).flat().map(format).join(' ');
+    return `M${p0}S${points} ${pEnd}`;
+  }
 };
 
 module.exports = prng;

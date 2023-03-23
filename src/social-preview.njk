@@ -38,21 +38,18 @@ eleventyExcludeFromCollections: true
 
   {%- for i in range(0, colors.length) -%}
     {%- set y0 = i * (height * waveHeight) / colors.length + (1 - waveHeight) * height -%}
-    {%- set path = "M0 " + y0 + "S" -%}
-    {%- for j in range(0, waveSteps) -%}
-      {%- set path = path + ((j + 1) * (width/waveSteps)) + " " + prng.randInt(y0 - amplitude, y0 + amplitude) + " " -%}
-    {%- endfor -%}
-    {%- set path = path + "V" + height + "H0Z" -%}
-    <path d="{{path}}" fill="{{ colors[i] }}"/>
+    {%- set step = width/waveSteps%}
+    <path d="{{prng.curve(waveSteps + 1, step, y0, amplitude)}}V{{height}}H0Z" fill="{{ colors[i] }}" stroke="{{ background }}"/>
   {%- endfor -%}
 
 
 
   <!-- date -->
   <text
-    font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
-    font-size="24"
-    font-weight="bold"
+    font-family="sans-serif"
+    font-size="26"
+    font-weight="700"
+    style="filter: drop-shadow(2px 2px 0px {{ background }})"
     fill="{{ color }}"
     letter-spacing="-1"
   >
@@ -64,10 +61,11 @@ eleventyExcludeFromCollections: true
   <!-- title -->
   <text
     id="text"
-    font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
+    font-family="sans-serif"
     font-size="80"
     font-weight="900"
     fill="{{ color }}"
+    style="filter: drop-shadow(3px 3px 0px {{ background }})"
     letter-spacing="-3"
   >
     {% for line in titleInLines %}
@@ -79,10 +77,11 @@ eleventyExcludeFromCollections: true
 
   <!-- sitename -->
   <text
-  font-family="Redhat, Roboto, 'Helvetica Neue', sans-serif"
-    font-size="24"
-    font-weight="bold"
+    font-family="sans-serif"
+    font-size="26"
+    font-weight="700"
     fill="{{ color }}"
+    style="filter: drop-shadow(2px 2px 0px {{ background }})"
     letter-spacing="-0.5"
   >
     <tspan x="160" y="600">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan>
