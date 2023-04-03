@@ -1,0 +1,27 @@
+.top-nav {
+  display: flex;
+  align-items: center;
+  flex: 0 100%;
+}
+
+.top-nav ul {
+  flex: 0 100%;
+  display: flex;
+  gap: var(--space-s);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  display: block;
+  font-size: var(--step-1);
+  padding: var(--space-xs) var(--space-s);
+  color: var(--header-fg);
+  background: var(--header-bg);
+  border-radius: .25rem;
+}
+
+.top-nav a:hover {
+  color: var(--header-bg);
+  background: var(--header-fg);
+}
