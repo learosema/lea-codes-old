@@ -1,0 +1,18 @@
+.header {
+  background: var(--header-bg);
+  color: var(--header-fg);
+
+  padding: var(--space-s);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .logo {
+  flex: 1 0 auto;
+}
+
+.header .logo svg {
+  display: block;
+  width: var(--space-xl);
+}
+

@@ -26,7 +26,7 @@
 }
 
 /* Remove border and set sensible defaults for backgrounds, on all elements except fieldset progress and meter */
-*:where(:not(fieldset, progress, meter)) {
+*:not(fieldset, progress, meter) {
   border-width: 0;
   border-style: solid;
   background-origin: border-box;
@@ -57,39 +57,18 @@ body {
 }
 
 /* Improve media defaults */
-:where(img, svg, video, canvas, audio, iframe, embed, object) {
+img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
 }
 
-:where(img, svg, video) {
+img, svg, video {
   block-size: auto;
   max-inline-size: 100%;
 }
 
-/* Remove stroke and set fill colour to the inherited font colour */
-:where(svg) {
-  stroke: none;
-  fill: currentColor;
-}
-
-/* SVG's without a fill attribute */
-:where(svg):where(:not([fill])) {
-  /* Remove fill and set stroke colour to the inherited font colour */
-  stroke: currentColor;
-  fill: none;
-  /* Rounded stroke */
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* Set a size for SVG's without a width attribute */
-:where(svg):where(:not([width])) {
-  inline-size: 5rem;
-}
-
 /* Remove built-in form typography styles */
-:where(input, button, textarea, select),
-:where(input[type="file"])::-webkit-file-upload-button {
+input, button, textarea, select,
+input[type="file"]::-webkit-file-upload-button {
   color: inherit;
   font: inherit;
   font-size: inherit;
@@ -98,28 +77,29 @@ body {
 }
 
 /* Change textarea resize to vertical only and block only if the browser supports that */
-:where(textarea) {
+textarea {
   resize: vertical;
 }
 
 @supports (resize: block) {
-  :where(textarea) {
+  textarea {
     resize: block;
   }
 }
 
 /* Avoid text overflows */
-:where(p, h1, h2, h3, h4, h5, h6) {
+p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
 /* Position list marker inside */
-:where(ul, ol) {
+ul, ol {
   list-style-position: inside;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-:where(ul, ol)[role="list"] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -129,39 +109,39 @@ a:not([class]) {
 }
 
 /* Make it clear that interactive elements are interactive */
-:where(a[href], area, button, input, label[for], select, summary, textarea, [tabindex]:not([tabindex*="-"])) {
+a[href], area, button, input, label[for], select, summary, textarea, [tabindex]:not([tabindex*="-"]) {
   cursor: pointer;
   touch-action: manipulation;
 }
 
-:where(input[type="file"]) {
+input[type="file"] {
   cursor: auto;
 }
 
-:where(input[type="file"])::-webkit-file-upload-button,
-:where(input[type="file"])::file-selector-button {
+input[type="file"]::-webkit-file-upload-button,
+input[type="file"]::file-selector-button {
   cursor: pointer;
 }
 
 /* Animate focus outline */
 @media (prefers-reduced-motion: no-preference) {
-  :focus-visible {
+  *:focus-visible {
     transition: outline-offset 145ms cubic-bezier(0.25, 0, 0.4, 1);
   }
 
-  :where(:not(:active)):focus-visible {
+  *:not(:active):focus-visible {
     transition-duration: 0.25s;
   }
 }
 
-:where(:not(:active)):focus-visible {
+*:not(:active):focus-visible {
   outline-offset: 5px;
 }
 
 /* Make sure users can't select button text */
-:where(button, button[type], input[type="button"], input[type="submit"], input[type="reset"]),
-:where(input[type="file"])::-webkit-file-upload-button,
-:where(input[type="file"])::file-selector-button {
+button,
+input[type="file"]::-webkit-file-upload-button,
+input[type="file"]::file-selector-button {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   user-select: none;
@@ -169,6 +149,6 @@ a:not([class]) {
 }
 
 /* Disabled cursor for disabled buttons */
-:where(button, button[type], input[type="button"], input[type="submit"], input[type="reset"])[disabled] {
+button[disabled] {
   cursor: not-allowed;
 }

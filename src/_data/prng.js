@@ -13,6 +13,14 @@ const prng = {
   randInt(a, b) {
     return a + Math.floor(prng.random() * (b - a + 1));
   },
+  /**
+   * Generates a random SVG path for a curve
+   * @param {number} length number of points
+   * @param {number} step x incrementation per point
+   * @param {number} y0 base y position
+   * @param {number} amplitude y-amplitude
+   * @returns {string} SVG path
+   */
   curve(length, step, y0, amplitude) {
     const min = y0 - amplitude;
     const max = y0 + amplitude;

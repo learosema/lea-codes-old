@@ -15,7 +15,7 @@
 <stop offset="80%" stop-color="deepskyblue"/>
 </linearGradient>
 </defs>
-<g stroke="currentColor" stroke-width="4" fill="url(#transPride)" stroke-lineJoin="round" filter="url(#shadow)">
+<g stroke="#000" stroke-width="4" fill="url(#transPride)" stroke-lineJoin="round" filter="url(#shadow)">
 <path d="M20 6v100h80v-40h-40v-60z"/>
 </g>
 </svg>
