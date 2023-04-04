@@ -1,15 +1,20 @@
 ---
-title: Lea Codes
+title: Hello World! I'm Lea
 description: "Lea's Blog on Web Development with Accessibility in Mind"
 layout: base.njk
 author: Lea Rosema
 eleventyExcludeFromCollections: true
 ---
 
-<h1>{{ title }}</h1>
+<article class="introduction | flow wrapper">
+  <h1>{{ title }}</h1>
+  <p>I'm a frontend developer, accessibility lover and digital artist based in Hamburg.</p>
+  <p>This is my blog where I write about several topics, web development and accessibility sprinkled with trans stuff.</p>
+  <p>I have a CodePen profile where I occasionally do digital arts. Sometimes I also code using legacy technologies, like 16bit x86 assembler.</p>
+</article>
 
 {% for post in collections.posts | reverse %}
-  <article class="article | wrapper flow">
+  <article class="article | wrapper flow prose">
     <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
     <p>{{ post.data.description }}</p>
   </article>

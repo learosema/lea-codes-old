@@ -1,10 +1,13 @@
 .header {
   background: var(--header-bg);
   color: var(--header-fg);
+  padding: var(--space-m);
+}
 
-  padding: var(--space-s);
+.header > .wrapper {
   display: flex;
   flex-wrap: wrap;
+  gap: var(--space-m);
 }
 
 .header .logo {
@@ -13,6 +16,11 @@
 
 .header .logo svg {
   display: block;
-  width: var(--space-xl);
+  width: var(--step-5);
 }
 
+.header-bottom {
+  fill: var(--header-bg);;
+  width: 100vw;
+  height: 50px;
+}

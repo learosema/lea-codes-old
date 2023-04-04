@@ -1,12 +1,22 @@
-<a href="#main" class="skip-link">{{ meta.skipContent }}</a>
-
-<header class="header | wrapper relative">
-
+<header class="header">
+  <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
+  <div class="wrapper">
     {% set activePage = page.url | url %}
     <a href="/" class="logo | no-underline" {% if activePage === '/' %} aria-current="page" {% endif %}>
       {% include "svg/the-fat-l.svg" %}
       <span class="visually-hidden">{{ meta.siteName }}</span>
     </a>
-
     {% include "partials/menu.njk" %}
+  </div>
 </header>
+
+<svg class="header-bottom" viewBox="0 0 1200 100" aria-hidden="true" preserveAspectRatio="none">
+  {{ prng.init(742) }}
+  <path class="s" d="{{ prng.curve(7, 150, 30, 25) }} V0H0Z"/>
+  <path class="s"  d="{{ prng.curve(7, 150, 45, 25) }} V0H0Z" fill-opacity="0.6"/>
+  <path class="s"  d="{{ prng.curve(7, 150, 60, 25) }} V0H0Z" fill-opacity="0.2"/>
+
+  <path class="md" d="{{ prng.curve(11, 100, 30, 25) }} V0H0Z"/>
+  <path class="md"  d="{{ prng.curve(11, 100, 45, 25) }} V0H0Z" fill-opacity="0.6"/>
+  <path class="md"  d="{{ prng.curve(11, 100, 60, 25) }} V0H0Z" fill-opacity="0.2"/>
+</svg>

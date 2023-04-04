@@ -1,7 +1,7 @@
 .top-nav {
   display: flex;
   align-items: center;
-  flex: 0 100%;
+  flex: 1 auto;
 }
 
 .top-nav ul {

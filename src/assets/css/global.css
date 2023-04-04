@@ -3,11 +3,16 @@
 @import 'config/_colors.css';
 @import 'config/_spacings.css';
 @import 'config/_typography.css';
+@import 'config/_body.css';
 
 @import 'components/_header.css';
 @import 'components/_top-nav.css';
+@import 'components/_main.css';
+@import 'components/_footer.css';
 
 @import 'utils/_visually-hidden.css';
 @import 'utils/_flow.css';
 @import 'utils/_prose.css';
 @import 'utils/_no-underline.css';
+@import 'utils/_breakpoints.css';
+@import 'utils/_wrapper.css';

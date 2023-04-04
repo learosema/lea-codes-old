@@ -1,0 +1,16 @@
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+  padding: var(--space-m);
+}
+
+
+.footer p {
+  text-align: center;
+}
+
+.footer-top {
+  fill: var(--footer-bg);
+  width: 100vw;
+  height: 50px;
+}

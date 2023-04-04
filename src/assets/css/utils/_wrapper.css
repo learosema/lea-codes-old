@@ -1,0 +1,4 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: var(--wrapper-size, 100ch);
+}
