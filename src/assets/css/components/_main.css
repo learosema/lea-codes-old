@@ -1,17 +1,3 @@
 main {
   flex: auto;
 }
-
-h1 {
-  color: var(--plum-1);
-  margin-block: var(--space-l);
-  line-height: 1.2;
-}
-
-@supports (-webkit-background-clip: text) {
-  h1 {
-    background-image:linear-gradient(60deg,var(--blue-1), var(--plum-3));
-    background-clip: text;
-    color: transparent;
-  }
-}

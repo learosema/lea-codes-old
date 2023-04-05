@@ -15,10 +15,10 @@
 .top-nav a {
   display: block;
   font-size: var(--step-1);
-  padding: var(--space-xs) var(--space-s);
+  padding: var(--space-2xs) var(--space-xs);
   color: var(--header-fg);
   background: var(--header-bg);
-  border-radius: .25rem;
+  border-radius: .5rem;
 }
 
 .top-nav a:hover {

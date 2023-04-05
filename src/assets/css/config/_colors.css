@@ -4,7 +4,7 @@
   --plum-2: #536;
   --plum-3: #96a;
   --plum-4: #cae;
-  --plum-5: #fee;
+  --plum-5: #ecd;
 
   --blue-1: #235;
   --blue-2: #57f;
@@ -23,6 +23,7 @@
   --grey-3: #555;
   --grey-4: #777;
   --grey-5: #ccc;
+  --grey-6: #eee;
 
   --bg: var(--grey-1);
   --fg: #fff;
@@ -36,10 +37,13 @@
   --link-hover-bg: #202050;
   --link-hover-fg: #aef;
 
-  --header-bg: #435;
+  --header-bg: var(--plum-2);
   --header-fg: #fff;
 
-  --footer-bg: #333;
+  --intro-bg: var(--blue-1);
+  --intro-fg: var(--blue-5);
+
+  --footer-bg: var(--grey-2);
   --footer-fg: #fff;
 
   --code-fg: #9f7;
@@ -69,11 +73,14 @@
     --link-hover-bg: #f0f0ff;
     --link-hover-fg: #24d;
 
-    --header-bg: #fce;
-    --header-fg: #724;
+    --header-bg: var(--plum-2);
+    --header-fg: var(--plum-5);
 
-    --footer-bg: #efefef;
-    --footer-fg: #333;
+    --intro-bg: var(--blue-4);
+    --intro-fg: var(--blue-1);
+
+    --footer-bg: var(--plum-4);
+    --footer-fg: var(--plum-1);
 
     --code-fg: #070;
     --code-bg: #f0f0f0;

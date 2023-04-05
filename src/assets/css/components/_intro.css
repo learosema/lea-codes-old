@@ -1,0 +1,16 @@
+.intro {
+  background: var(--intro-bg);
+  color: var(--intro-fg);
+  padding: var(--space-m);
+}
+
+.intro h1 {
+  color: var(--intro-fg);
+}
+
+.intro-bottom {
+  width: 100vw;
+  height: 75px;
+  fill: var(--intro-bg);
+  background: var(--bg);
+}

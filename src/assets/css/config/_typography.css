@@ -53,3 +53,13 @@ h5 {
 p {
   font-size: var(--step-0, 1.13rem);
 }
+
+a {
+  color: var(--link-fg);
+}
+
+h1, h2, h3, h4, h5  {
+  font-weight: 500;
+  color: var(--headline-fg);
+  line-height: 1.2;
+}

@@ -1,0 +1,6 @@
+.article-card {
+  width: 100%;
+  padding: var(--space-m);
+  border-radius: calc(var(--space-m) / 4);
+  border: 1px solid var(--fg, #000);
+}

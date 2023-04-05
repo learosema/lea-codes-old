@@ -1,6 +1,6 @@
 ---
 title: Another post
-date: 2023-11-19
+date: 2022-11-19
 description: Lorem ipsum dolor sit amet
 ---
 
