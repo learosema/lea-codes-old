@@ -37,8 +37,8 @@
   --link-hover-bg: #202050;
   --link-hover-fg: #aef;
 
-  --header-bg: var(--plum-2);
-  --header-fg: #fff;
+  --header-bg: var(--plum-4);
+  --header-fg: var(--plum-1);
 
   --intro-bg: var(--blue-1);
   --intro-fg: var(--blue-5);
