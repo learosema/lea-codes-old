@@ -1,16 +1,18 @@
 :root {
 
-  --plum-1: #325;
-  --plum-2: #536;
-  --plum-3: #96a;
-  --plum-4: #cae;
-  --plum-5: #ecd;
+  --pink-1: #4b0030;
+  --pink-2: #790051;
+  --pink-3: #d2008f;
+  --pink-4: #ff2fb2;
+  --pink-5: #ffdcec;
+  --pink-6: #fff7fb;
 
-  --blue-1: #235;
-  --blue-2: #57f;
-  --blue-3: #7bf;
-  --blue-4: #adf;
-  --blue-5: #def;
+  --blue-1: #001c30;
+  --blue-2: #003b5e;
+  --blue-3: #0071af;
+  --blue-4: #008fdb;
+  --blue-5: #c6e0ff;
+  --blue-6: #e8f2ff;
 
   --red-1: #511;
   --red-2: #722;
@@ -28,23 +30,20 @@
   --bg: var(--grey-1);
   --fg: #fff;
 
-  --bg-secondary: #423;
-  --fg-secondary: #fee;
-
-  --headline-fg: #fae;
+  --headline-fg: var(--pink-5);
 
   --link-fg: #7df;
   --link-hover-bg: #202050;
   --link-hover-fg: #aef;
 
-  --header-bg: var(--plum-4);
-  --header-fg: var(--plum-1);
+  --header-bg: var(--grey-1);
+  --header-fg: var(--grey-6);
 
-  --intro-bg: var(--blue-1);
-  --intro-fg: var(--blue-5);
+  --intro-bg: var(--blue-2);
+  --intro-fg: var(--blue-6);
 
-  --footer-bg: var(--grey-2);
-  --footer-fg: #fff;
+  --footer-bg: var(--pink-2);
+  --footer-fg: var(--pink-6);
 
   --code-fg: #9f7;
   --code-bg: #000;
@@ -67,20 +66,20 @@
     --bg: #fefefe;
     --fg: #121212;
 
-    --headline-fg: #c06;
+    --headline-fg: var(--pink-3);
 
     --link-fg: #13c;
     --link-hover-bg: #f0f0ff;
     --link-hover-fg: #24d;
 
-    --header-bg: var(--plum-2);
-    --header-fg: var(--plum-5);
+    --header-bg: var(--grey-1);
+    --header-fg: var(--grey-6);
 
-    --intro-bg: var(--blue-4);
+    --intro-bg: var(--blue-5);
     --intro-fg: var(--blue-1);
 
-    --footer-bg: var(--plum-4);
-    --footer-fg: var(--plum-1);
+    --footer-bg: var(--pink-5);
+    --footer-fg: var(--pink-1);
 
     --code-fg: #070;
     --code-bg: #f0f0f0;

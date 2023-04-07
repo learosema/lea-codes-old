@@ -1,3 +1,7 @@
 main {
   flex: auto;
 }
+
+main > *:not(svg) {
+  padding: var(--space-m);
+}

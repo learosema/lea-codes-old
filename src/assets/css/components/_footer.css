@@ -11,7 +11,8 @@
 
 .footer-top {
   margin-block-start: var(--space-xl);
-  fill: var(--footer-bg);
+  fill: var(--bg);
+  background: var(--footer-bg);
   width: 100vw;
   height: 75px;
 }

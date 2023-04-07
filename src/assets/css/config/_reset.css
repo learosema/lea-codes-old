@@ -57,7 +57,7 @@ body {
 }
 
 /* Improve media defaults */
-img, svg, video, canvas, audio, iframe, embed, object {
+picture, img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
 }
 

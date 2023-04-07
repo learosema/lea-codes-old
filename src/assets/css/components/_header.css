@@ -18,10 +18,3 @@
   display: block;
   width: var(--step-4);
 }
-
-.header-bottom {
-  background: var(--intro-bg);
-  fill: var(--header-bg);;
-  width: 100vw;
-  height: 75px;
-}

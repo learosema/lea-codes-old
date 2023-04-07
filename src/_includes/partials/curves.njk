@@ -1,0 +1,14 @@
+<svg class="{{ curveClass }}" viewBox="0 0 1200 150" aria-hidden="true" preserveAspectRatio="none">
+  {{ prng.init(curveSeed) }}
+  {% set vY = 0 %}
+  {% if curveMode == 'bottom' %}
+    {% set vY = 150 %}
+  {% endif %}
+  <path class="s" d="{{ prng.curve(7, 150, 50, 25) }} V{{ vY }}H0Z"/>
+  <path class="s"  d="{{ prng.curve(7, 150, 65, 25) }} V{{ vY }}H0Z" fill-opacity="0.6"/>
+  <path class="s"  d="{{ prng.curve(7, 150, 80, 25) }} V{{ vY }}H0Z" fill-opacity="0.2"/>
+
+  <path class="md" d="{{ prng.curve(11, 100, 50, 25) }} V{{ vY }}H0Z"/>
+  <path class="md" d="{{ prng.curve(11, 100, 65, 25) }} V{{ vY }}H0Z" fill-opacity="0.6"/>
+  <path class="md" d="{{ prng.curve(11, 100, 80, 25) }} V{{ vY }}H0Z" fill-opacity="0.2"/>
+</svg>

@@ -1,10 +1,13 @@
 const syntaxHighlightPlugin = require('@11ty/eleventy-plugin-syntaxhighlight');
+
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 
 const esbuildPlugin = require('./config/plugins/esbuild');
 const lightningCSSPlugin = require('./config/plugins/lightning-css');
 const htmlTransformPlugin = require('./config/plugins/html-transform');
+const imagePlugin = require('./config/plugins/image');
+
 const { filterPlugin } = require('./config/filters/index');
 
 // module import events
@@ -21,6 +24,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(lightningCSSPlugin);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(htmlTransformPlugin);
+  eleventyConfig.addPlugin(imagePlugin);
 
   // filters
   eleventyConfig.addPlugin(filterPlugin);

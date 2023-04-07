@@ -8,9 +8,21 @@
   color: var(--intro-fg);
 }
 
+.intro-top {
+  width: 100vw;
+  height: 75px;
+  background: var(--intro-bg);
+  fill: var(--header-bg);
+}
+
 .intro-bottom {
   width: 100vw;
   height: 75px;
   fill: var(--intro-bg);
   background: var(--bg);
+}
+
+.intro__picture > img {
+  border-radius: 12.5%;
+  box-shadow: .25rem .25rem .25rem 0 #000;
 }

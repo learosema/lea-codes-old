@@ -6,27 +6,26 @@ author: Lea Rosema
 eleventyExcludeFromCollections: true
 ---
 
+{% set curveClass = 'intro-top' %}
+{% set curveSeed = 742 %}
+{% include "partials/curves.njk" %}
+
 <div class="intro">
   <article class="flow wrapper">
     <header class="intro__header">
       <p>Hello World! I am the</p>
       <h1>{{ title }}</h1>
     </header>
+    {% image "lea.webp", "Lea, standing in front of a floral blue wallpaper, wearing a black dress, red lipstick and glasses", "(min-width: 768px) calc(50vw - 40px), calc(100vw - 40px)", "intro__picture" %}
     <p class="intro__text">I'm a frontend developer, accessibility lover and digital artist based in Hamburg.</p>
   </article>
 </div>
-<svg class="intro-bottom" viewBox="0 0 1200 150" aria-hidden="true" preserveAspectRatio="none">
-  {{ prng.init(342) }}
-  <path class="s" d="{{ prng.curve(7, 150, 50, 25) }} V0H0Z"/>
-  <path class="s"  d="{{ prng.curve(7, 150, 65, 25) }} V0H0Z" fill-opacity="0.6"/>
-  <path class="s"  d="{{ prng.curve(7, 150, 80, 25) }} V0H0Z" fill-opacity="0.2"/>
 
-  <path class="md" d="{{ prng.curve(11, 100, 50, 25) }} V0H0Z"/>
-  <path class="md"  d="{{ prng.curve(11, 100, 65, 25) }} V0H0Z" fill-opacity="0.6"/>
-  <path class="md"  d="{{ prng.curve(11, 100, 80, 25) }} V0H0Z" fill-opacity="0.2"/>
-</svg>
+{% set curveClass = 'intro-bottom' %}
+{% set curveSeed = 342 %}
+{% include "partials/curves.njk" %}
 
-<div class="article-list">
+<div class="content">
   <article class="flow wrapper">
     <h2>Articles</h2>
     <ul role="list" class="auto-grid">
