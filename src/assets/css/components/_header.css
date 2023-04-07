@@ -1,7 +1,7 @@
 .header {
   background: var(--header-bg);
   color: var(--header-fg);
-  padding: var(--space-xs) var(--space-m);
+  padding-block: var(--space-m);
 }
 
 .header > .wrapper {
