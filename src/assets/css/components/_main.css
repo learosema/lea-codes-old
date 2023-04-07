@@ -2,6 +2,6 @@ main {
   flex: auto;
 }
 
-main > *:not(svg) {
-  padding: var(--space-m);
+main > .content {
+  padding-block: var(--space-m);
 }

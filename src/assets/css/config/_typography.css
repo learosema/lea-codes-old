@@ -58,6 +58,17 @@ a {
   color: var(--link-fg);
 }
 
+a:hover {
+  color: var(--link-hover-fg);
+}
+
+code {
+  color: var(--code-fg);
+  background: var(--code-bg);
+  padding: 0 .25em;
+  border-radius: .25em;
+}
+
 h1, h2, h3, h4, h5  {
   font-weight: 500;
   color: var(--headline-fg);
