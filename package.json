@@ -1,31 +1,42 @@
 {
   "name": "webgl-demos",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Various WebGL demos by Lea Rosema",
   "scripts": {
-    "start": "concurrently 'npm:watch-css' 'npm:serve-11ty'",
+    "start": "npm run dev",
+    "dev": "concurrently 'npm:watch-css' 'npm:serve-11ty'",
     "build-11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "serve-11ty": "eleventy --serve",
     "build-css": "cross-env ELEVENTY_ENV=production sass src/scss/:src/_includes/css/",
     "watch-css": "sass src/scss/:src/_includes/css/ --watch",
     "prebuild": "rm -rf public",
     "build": "npm run build-css -s && npm run build-11ty -s",
-    "deploy": "touch public/.nojekyll && cp CNAME public && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/learosema/lea-codes.git"
+    "url": "https://github.com/learosema/webgl-book.git"
   },
   "keywords": [],
   "author": "Lea Rosema",
   "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
-    "concurrently": "^7.0.0",
+    "@11ty/eleventy": "^2.0.1",
+    "@netlify/plugin-a11y": "^1.0.0-beta.1",
+    "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",
-    "gh-pages": "^3.2.3",
     "html-minifier": "^4.0.0",
-    "sass": "^1.49.9"
+    "netlify-plugin-cache": "^1.0.3",
+    "sass": "^1.61.0",
+    "semantic-release": "^21.0.1"
   }
 }
