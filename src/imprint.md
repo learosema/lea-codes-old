@@ -26,7 +26,7 @@ Rödingsmarkt 9
 Email: lea et lea.lgbt (replace ' et ' with '@')
 ```
 
-Please don't hesitate to contact me if you have any questions regarding this Mastodon instance. In respect of the environment, please refrain from sending traditional mail via paper.
+Please don't hesitate to contact me if you have any questions regarding this blog. In respect of the environment, please refrain from sending traditional mail via paper.
 
 Also, the given address is not suited for receiving packages.
 
