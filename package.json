@@ -1,5 +1,5 @@
 {
-  "name": "webgl-demos",
+  "name": "lea-codes",
   "version": "0.0.0",
   "description": "Various WebGL demos by Lea Rosema",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/learosema/webgl-book.git"
+    "url": "https://github.com/learosema/lea-codes.git"
   },
   "keywords": [],
   "author": "Lea Rosema",
